@@ -3,9 +3,11 @@ Wind = str(input("Is it windy? > ")).lower()
 
 if Rain == "yes" and Wind == "yes":
     print("Oh no I suggest a good coat to keep you warm and dry.")
-if Rain == "yes" and Wind == "no":
+elif Rain == "yes" and Wind == "no":
     print("An umbrella would be a good idea.")
-if Rain == "no" and Wind == "yes":
+elif Rain == "no" and Wind == "yes":
     print("Dress up with extra layers to keep warm.")
-if Rain == "no" and Wind == "no":
+elif Rain == "no" and Wind == "no":
     print("A nice day to go outside!")
+else:
+    print("Please try again and answer simply yes or no.")
