@@ -1,0 +1,2 @@
+Colour = str(input("Enter your favorite colour > ")).lower()
+print("I like",Colour, "to")
