@@ -1,0 +1,8 @@
+redo = ("Y")
+while redo == "Y":
+  num1 = int(input("Please enter your first number here > "))
+  num2 = int(input("Please enter your second number > "))
+  total = num1 + num2
+  print(total)
+  redo = str(input("Would you like to enter another number? Enter Y or N. > ")).upper()
+print = ("Goodbye have a nice day!")
