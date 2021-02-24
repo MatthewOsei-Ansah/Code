@@ -1,0 +1,9 @@
+Count = 0
+AddMore ="Y"
+while AddMore == "Y":
+  Name = str(input("Please enter the name of the person here > "))
+  print(Name, "Has been invited!")
+  Count = Count + 1
+  AddMore = str(input("Would you like to add another person? > ")).upper()
+
+print("The number of people invited to the party is", Count)
