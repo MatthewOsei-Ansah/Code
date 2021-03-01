@@ -1,0 +1,15 @@
+compnum = 50
+Usernum = int(input("Guess the number! > "))
+Count = 1
+
+
+while compnum != Usernum:
+ if Usernum > 50:
+  print("Too high!")
+ else:
+   print("Too low!")
+ Count = Count + 1
+ Usernum = int(input("Have another go! > "))
+
+print("Well done it was 50")
+print("Your number of tries was", Count)  
