@@ -1,0 +1,9 @@
+Num = int(input("Enter a number between 10 and 20: "))
+while Num < 10 or Num > 20:
+  if Num < 10:
+    print("Too low")
+  elif Num > 20:
+    print("Too high")
+  Num = int(input("Enter a number between 10 and 20: "))  
+
+print("Thank you")
