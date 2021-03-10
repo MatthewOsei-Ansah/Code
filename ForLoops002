@@ -1,0 +1,4 @@
+Name = str(input("Enter your name here please >>> "))
+Num = int(input("Enter a loop number here >>> "))
+for i in range (Num):
+  print(Name) 
