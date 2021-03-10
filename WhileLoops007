@@ -1,0 +1,9 @@
+numbottles = 10
+
+while numbottles > 0:
+  print(numbottles, "green bottles sitting on the wall")
+  print(numbottles, "green bottles sitting on the wall")
+  print("If 1 green bottle should accidently fall.")
+  numbottles = numbottles - 1
+  ans = int(input("How many green bottles will remain?: "))
+  print("There will be", numbottles, "green bottles sitting on the wall" )
