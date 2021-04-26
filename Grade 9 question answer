@@ -1,0 +1,18 @@
+Maxweight = 0
+Minweight = 99999
+count = 0
+end = False
+weight = int(input("Enter the weight of the item: "))
+while end == False:
+  if weight <= 0:
+    print("Error. Please try again.")
+
+  else:
+    if weight < Minweight:
+      Minweight = weight
+    elif weight > Maxweight:
+      Maxweight = weight
+  weight = int(input("Enter the weight of the item. 0 to quit: "))
+
+  if weight == 0:
+    end = True
