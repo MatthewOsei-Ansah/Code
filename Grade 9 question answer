@@ -8,6 +8,7 @@ while end == False:
     print("Error. Please try again.")
 
   else:
+    count = count + 1
     if weight < Minweight:
       Minweight = weight
     elif weight > Maxweight:
@@ -16,3 +17,6 @@ while end == False:
 
   if weight == 0:
     end = True
+
+print("Your heaviest item is >>>", Maxweight)
+print("Your lightest item is >>>", Minweight)
