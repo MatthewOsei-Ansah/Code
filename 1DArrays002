@@ -1,0 +1,12 @@
+Cars = []
+Loop = True
+
+while Loop == True:
+  Newcar = (input("Enter a car company x to exit >>> "))
+  if Newcar == "x":
+    print("exiting...")
+    Loop = False
+  else:
+    Cars.append(Newcar)
+
+print("The list is:", Cars)
