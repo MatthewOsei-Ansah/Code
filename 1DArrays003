@@ -1,0 +1,13 @@
+Invites = []
+Loop = True
+
+while Loop == True:
+  newinvite = input("Enter a name type no to exit >>> ")
+  if newinvite == "no":
+    print("exiting...")
+    Loop = False
+  else:
+    Invites.append(newinvite)
+
+print("Your list is:", Invites)    
+print("Number of people: ", len(Invites))    
