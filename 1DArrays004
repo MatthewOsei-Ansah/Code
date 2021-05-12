@@ -1,0 +1,10 @@
+tvshows = ["One Punch Man", "The Falcon and The Winter Soilder", "The Mandolorian", "The Amazing World Of Gumball"]
+for i in tvshows:
+  print(i)
+
+NewShow = input("Enter another show of your choosing >>> ")
+
+tvshows.append(NewShow)
+
+for i in tvshows:
+  print(i)
