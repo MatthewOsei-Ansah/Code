@@ -1,0 +1,10 @@
+Food = []
+
+for i in range(4): 
+  NewFood = input("Enter food here enter done to exit >>> ")
+  Food.append(NewFood)
+
+for i in Food:
+  print(i)
+
+Num = int(input("Enter the number of the food you would like to remove >>> "))
