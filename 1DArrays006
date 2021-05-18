@@ -1,0 +1,19 @@
+nums = []
+
+for i in range(3):
+  newnum = int(input("Enter a number here >>> "))
+  nums.append(newnum)
+
+for i in nums:
+  print(i) 
+
+delete = str(input("Would you like to selete a number? >>> ")).lower
+
+if delete == "yes":
+  removenum = int(input("Enter the number you would like to remove to remove it >>> "))
+  nums.remove(removenum)
+  for i in nums:
+    print(i)
+else:
+  for i in nums:
+    print(i)
