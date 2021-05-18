@@ -8,3 +8,9 @@ for i in Food:
   print(i)
 
 Num = int(input("Enter the number of the food you would like to remove >>> "))
+Num = Num - 1
+
+del Food[Num]
+
+for i in Food:
+  print(i)
