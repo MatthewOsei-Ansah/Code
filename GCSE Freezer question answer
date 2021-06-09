@@ -1,0 +1,8 @@
+freezers = [-20, -19, -18, -17, -16, 0, 1]
+index = 0
+
+while index < len(freezers):
+  temperature = freezers[index]
+  if (temperature < -19) or (temperature > -17):
+    print("Freezer",index,"is out of tolerance: " ,temperature)
+  index = index +1
