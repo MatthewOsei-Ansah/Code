@@ -1,0 +1,20 @@
+num = 0
+Lowest = 999
+Highest = 0
+
+for i in range(2):
+  num = int(input("Enter a number here >>> "))
+  if num < Lowest:
+    Lowest = num
+  if num > Highest:
+    Highest = num
+
+while num != 0:
+  num = int(input("Enter another number or type 0 to quit >>> "))
+  if num < Lowest:
+    Lowest = num
+  if num > Highest:    
+    Highest = num 
+
+print("Your lowest value was", Lowest)
+print("Your highest value was", Highest)
