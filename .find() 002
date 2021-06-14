@@ -1,0 +1,4 @@
+Url = ("Google.com")
+target = (".")
+
+print("The target located at the index", Url.find(target))
