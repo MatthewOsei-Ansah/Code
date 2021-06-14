@@ -1,0 +1,6 @@
+name = ("Matthew")
+element=input("Enter a value you like to find>>> ")
+
+thing = name.find(element)
+
+print(thing + 1)
