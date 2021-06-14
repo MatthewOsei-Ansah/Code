@@ -1,0 +1,4 @@
+email =("RandomEmail@.emailer.com")
+target =("@")
+
+print("The @ is at the index", email.find(target))
