@@ -1,0 +1,21 @@
+def menu():
+  print("MENU")
+  print("1)Domination")
+  print("2)Team Deathmatch")
+  print("3)Headquarters")
+
+  choice = int(input("Enter your choice > "))
+  if choice == 2:
+      print("Loading Team Deathmatch")
+      print("Tip:")
+      print("If you are takining damage in an open area crouch to reduce your profile")
+  elif choice == 1:
+      print("Loading Domination")
+      print("Tip")
+      print("If you shoot others they will most likely shot you back")
+  elif choice == 3:
+      print("Loading Headquarters")
+      print("Tip")
+      print("Your gun can be upgraded with attachments to enhance your gameplay and give you the upperhand")
+      
+menu()
