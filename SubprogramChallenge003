@@ -1,0 +1,19 @@
+def menu():
+  print("Menu")
+  print("1) 1-Player")
+  print("2) 2-Player")
+  print("3) Online")
+  print("4) Exit")
+  
+  choice = int(input("Enter your choice > "))
+  if choice == 2:
+      print("Loading 2-Player")    
+  elif choice == 1:
+      print("Loading 1-Player")
+  elif choice == 3:
+      print("Loading Online")
+  elif choice == 4:
+      print("Exiting...")
+
+
+menu()
