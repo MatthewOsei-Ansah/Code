@@ -1,0 +1,38 @@
+def menu():
+  print("Menu")
+  print("0) Exit")
+  print("1) Timestable")
+  print("2) Addition")
+
+
+  choice = int(input("Enter your choice > "))
+
+  if choice == 0:
+      print("Exiting...")    
+  elif choice == 1:
+      timestable()
+  elif choice == 2:
+      addition()
+  else:
+      print("Invalid Choice")
+      menu()
+
+def addition():
+    num1 = int(input("Enter your first number > "))
+    num2 = int(input("Enter your second number > "))
+    total = num1 + num2
+    print(num1, "+", num2, "=", total)
+    menu()
+    
+def timestable():
+    num = int(input("Enter your number > "))
+    x = 1
+    while x <= 12:
+        total = num*x
+        print(num,"*",x, "=", total)
+
+        x = x + 1
+
+    menu()
+
+menu()
