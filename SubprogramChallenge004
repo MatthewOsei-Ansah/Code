@@ -1,0 +1,41 @@
+def menu():
+  print("Menu")
+  print("1) Think big")
+  print("2) Think bigger")
+  print("3) Winning")
+  print("4) Winner")
+  print("5) Exit")
+
+  choice = int(input("Enter your choice > "))
+
+  if choice == 2:
+      ThinkBig()    
+  elif choice == 1:
+      ThinkBigger()
+  elif choice == 3:
+      Winning()
+  elif choice == 4:
+      Winner()
+  elif choice == 5:
+      print("Exiting...")
+  else:
+      print("Invalid Choice")
+      menu()
+
+
+def ThinkBig():
+    print("Think big chosen")
+
+def ThinkBigger():
+    print("Think bigger chosen")
+
+def Winning():
+    print("Winning chosen")
+
+def Winner():
+    print("Winner chosen")
+  
+
+
+
+menu()
