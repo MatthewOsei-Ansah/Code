@@ -1,0 +1,25 @@
+def menu():
+  print("Menu")
+  print("0) Exit")
+  print("1) Timestable")
+
+
+  choice = int(input("Enter your choice > "))
+
+  if choice == 0:
+      print("Exiting...")    
+  elif choice == 1:
+      timestable()
+  else:
+      print("Invalid Choice")
+      menu()
+
+def timestable():
+    num = int(input("Enter your number > "))
+    x = 1
+    while x <= 12:
+        total = num*x
+        print(total)
+        x = x + 1
+
+menu()
