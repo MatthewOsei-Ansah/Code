@@ -19,7 +19,8 @@ def timestable():
     x = 1
     while x <= 12:
         total = num*x
-        print(total)
+        print(num,"*",x, "=", total)
+
         x = x + 1
 
 menu()
