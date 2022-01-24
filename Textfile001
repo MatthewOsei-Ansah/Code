@@ -1,0 +1,4 @@
+a = open("numbers.txt", "w")
+uservalue = ("1,2,3,4,5")
+a.write(uservalue)
+a.close() 
