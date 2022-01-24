@@ -1,0 +1,4 @@
+name = open("names.txt", "w")
+uservalue = ("Matthew\nJahvelli\nNathnan\nRuebino\nMartina\n")
+name.write(uservalue)
+name.close()               
