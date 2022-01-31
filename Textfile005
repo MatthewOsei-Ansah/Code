@@ -1,0 +1,4 @@
+file = open("names.txt", "a")
+Input = str(input("Enter a name >>> "))
+file.write("\n"+Input)
+file.close()
