@@ -1,0 +1,24 @@
+def userprofile():
+    file = open("users,txt","w")
+    name = str(input("Enter your first and last name >>> "))
+    age = str(input("Enter your age >>> "))
+    file.write("\n"+name+age)
+    choice = str(input("Would you like to enter another user? Y/N >>> ")).upper()
+    return choice
+
+def validation():
+    choice = str(input("Would you like to enter another user? Y/N >>> ")).upper()
+     
+    
+
+userprofile()
+
+if choice == "Y":
+    while choice == "Y":
+        userprofile()
+
+elif choice == "N":
+    print("Data has been saved to the text file users.")
+
+else:
+    print("Please enter Y or N")
