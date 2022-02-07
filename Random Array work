@@ -1,0 +1,13 @@
+Array = [1, 2, 3, 4, 5]
+
+print(Array)
+
+index = int(input("Enter the postion of the number you would like to change >>> "))
+index = index - 1
+
+usernum = int(input("Enter the number you would like to replace it with >>> "))
+
+Array[index] = usernum
+
+print(Array)
+            
