@@ -1,0 +1,7 @@
+SpaceX = []
+
+for i in range(3):
+  UserValue = str(input("Enter something for my space company >>> "))
+  SpaceX.append(UserValue)
+
+print(SpaceX)  
