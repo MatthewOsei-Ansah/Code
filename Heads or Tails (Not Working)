@@ -1,0 +1,22 @@
+import random
+
+Userguess = str(input("Enter you guess H or T? >>> ")).upper()
+Random = ["Heads", "Tails"]
+Selected = random.choice(Random)
+
+while Userguess != "H" or Userguess != "T":
+    print("Please enter simply H or T")
+    Userguess = str(input("Enter you guess H or T? >>> ")).upper()
+    
+if Userguess == "H":
+    Userguess = "Heads"
+
+elif Userguess == "T":
+    Userguess = "Tails"
+
+print(Selected)
+if Userguess == Selected:
+    print("You win!")
+
+else:
+    ("Unlucky!")
