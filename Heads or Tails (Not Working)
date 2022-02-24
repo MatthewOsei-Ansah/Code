@@ -3,10 +3,6 @@ import random
 Userguess = str(input("Enter you guess H or T? >>> ")).upper()
 Random = ["Heads", "Tails"]
 Selected = random.choice(Random)
-
-while Userguess != "H" or Userguess != "T":
-    print("Please enter simply H or T")
-    Userguess = str(input("Enter you guess H or T? >>> ")).upper()
     
 if Userguess == "H":
     Userguess = "Heads"
@@ -14,9 +10,14 @@ if Userguess == "H":
 elif Userguess == "T":
     Userguess = "Tails"
 
+else:
+  while Userguess != "H" or Userguess != "T":
+    print("Please enter simply H or T")
+    Userguess = str(input("Enter you guess H or T? >>> ")).upper()
+
 print(Selected)
 if Userguess == Selected:
     print("You win!")
 
-else:
-    ("Unlucky!")
+elif Userguess != Selected:
+  ("Unlucky!")
