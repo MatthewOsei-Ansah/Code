@@ -1,0 +1,27 @@
+import random
+def loop():
+    choice = int(input("Enter your guess between 1 and 5 here >>> "))
+    if choice > 5:
+        print ("Too high")
+        loop()
+    elif choice < 1:
+        print("Too low")
+        loop()
+    
+choice = int(input("Enter your guess between 1 and 5 here >>> "))
+if choice > 5:
+    print ("Too high")
+    loop()
+elif choice < 1:
+    print("Too low")
+    loop()
+
+num = random.randint(1, 5)
+
+if choice == num:
+    print(num)
+    print("Well done!")
+
+elif choice != num:
+    print(num)
+    print("Unlucky!")
