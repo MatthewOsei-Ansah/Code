@@ -1,0 +1,18 @@
+firstname = str(input("Enter your first name here >>> "))
+surname = str(input("Enter you second name here >>> "))
+role = str(input("Are you a teacher or student? T or S >>> ")).upper()
+
+
+def Teacher():
+  username = surname[0:3] + firstname[0:2]
+  print("This will be your username > ", username)
+
+def Student():
+  username = firstname [0:3] + surname[0:2]
+  print("This will be your username >", username)
+
+if role == "T":
+  Teacher()
+
+if role == "S":
+  Student()
