@@ -76,7 +76,7 @@ def show_score(x, y):
 
 def Game_Over_Text():
     Over_Text = Over_Font.render("GAME OVER!", True, (255, 255, 255))
-    screen.blit(Over_Text, (260, 250))
+    screen.blit(Over_Text, (250, 250))
 
 
 
