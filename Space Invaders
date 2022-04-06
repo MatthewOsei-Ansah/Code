@@ -1,3 +1,4 @@
+# CHANGE NAMES OF IMAGE FILES
 import pygame
 import random
 
@@ -6,23 +7,25 @@ pygame.init()
 
 # create the screen Width, Height
 screen = pygame.display.set_mode((800, 600))
+#Backround
+Background = pygame.image.load("Background.png")
 
 # Title and Icon
 pygame.display.set_caption("Space Invaders!")
-icon = pygame.image.load("001-joystick.png")
+icon = pygame.image.load("001-video-game.png")
 pygame.display.set_icon(icon)
 
 # Player
-PlayerImg = pygame.image.load("001-arcade-game.png")
+PlayerImg = pygame.image.load("001-space-ship.png")
 PlayerX = 370
 PlayerY = 480
 PlayerX_Change = 0
 
 # Enemy
-EnemyImg = pygame.image.load("001-alien.png")
+EnemyImg = pygame.image.load("002-alien.png")
 EnemyX = random.randint(0, 800)
 EnemyY = random.randint(50, 150)
-EnemyX_Change = 0.3
+EnemyX_Change = 2.5
 EnemyY_Change = 40
 
 
@@ -39,6 +42,8 @@ running = True
 while running:
     # RGB - Red, Green, Blue
     screen.fill((0, 0, 0))
+    #Backround
+    screen.blit(Background,(0,0))
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -47,9 +52,9 @@ while running:
         # If keystroke is pressed check whether it is right or left
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
-                PlayerX_Change = -0.3
+                PlayerX_Change = -5
             if event.key == pygame.K_RIGHT:
-                PlayerX_Change = 0.3
+                PlayerX_Change = 5
         if event.type == pygame.KEYUP:
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
                 PlayerX_Change = 0
@@ -67,10 +72,10 @@ while running:
     # Enemy Movement
     EnemyX += EnemyX_Change
     if EnemyX <= 0:
-        EnemyX_Change = 0.3
+        EnemyX_Change = 2.5
         EnemyY += EnemyY_Change
     elif EnemyX >= 736:
-        EnemyX_Change = -0.3
+        EnemyX_Change = -2.5
         EnemyY += EnemyY_Change
 
 
