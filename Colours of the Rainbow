@@ -1,0 +1,11 @@
+from time import sleep
+
+rainbow =["red","orange","yellow","green","blue","indigo", "violet"]
+x = 0
+for i in rainbow:
+  print(rainbow[x])
+  print ("Colour",x+1,"is", rainbow[x])
+  x = x+1
+  sleep(1)
+  
+  # Don't ask why I made this
