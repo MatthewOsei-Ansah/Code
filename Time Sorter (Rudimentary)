@@ -1,0 +1,15 @@
+Slow = 0
+Medium = 0
+Fast  = 0
+
+Input = int(input("Enter time > "))
+
+while(Input != 0):
+    if Input >= 60:
+        Slow += 1
+
+    elif (30 =< Input < 60):
+        Medium += 1
+        
+    else:
+        Fast += 1
